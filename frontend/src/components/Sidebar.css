@@ -1,0 +1,213 @@
+/* Sidebar.css */
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #f5ecec; 
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); 
+  color: #fff; 
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #807e7e; 
+  overflow-y: auto;
+}
+
+.task-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.task-list {
+  flex: 1;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333; 
+}
+
+.icon-button, .add-button {
+  background: #333; 
+  border: 1px solid #555;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  color: #fff; 
+}
+
+.icon-button:hover, .add-button:hover {
+  background-color: #444; 
+}
+
+.task {
+  padding: 10px;
+  background: #222; 
+  margin: 5px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #333; 
+}
+
+.task.active {
+  background: #333; 
+}
+
+.auth-section {
+  margin-top: auto;
+  text-align: center;
+}
+
+.auth-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 30px;
+}
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100px;
+  }
+}
+
+.task.dropdown-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-arrow {
+  font-size: 0.8em;
+  margin-left: 5px;
+}
+
+.dropdown-menu {
+  margin-top: 5px;
+  border-left: 1px solid #333; 
+}
+
+.dropdown-menu .task {
+  padding-left: 25px; 
+  cursor: pointer;
+}
+
+.dropdown-menu .task.active {
+  background-color: #333;
+}
+.logo-container {
+  display: flex; 
+  align-items: center; 
+}
+
+.logo-image {
+  height: 200px;
+  width: 95%;
+}
+
+.export-button-container button {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.export-button-container button:hover {
+  background-color: #4cae4c;
+}
+
+.search-priority-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  margin-bottom: 15px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #444; 
+  color: #fff;
+  width: 95%;
+}
+
+.search-logo {
+  font-size: 1.2em;
+  margin-right: 8px;
+}
+
+.search-container input {
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: 8px;
+  outline: none;
+  font-size: 1em;
+}
+
+.search-container input::placeholder {
+  color: #ccc;
+}
+
+.logout-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; 
+  align-self: center; 
+  width: 95%;
+}
+
+.logout-button:hover {
+  background-color: #45a049; 
+}

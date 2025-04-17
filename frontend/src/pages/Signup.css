@@ -1,0 +1,214 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+.signup-container .signup-box {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;             
+  background: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.signup-container .left-section {
+  flex: 1;                         
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup-container .right-section {
+  flex: 1;                         
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+.signup-container .right-section img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;                 
+  max-height: 400px;                
+  object-fit: cover;                 
+  border-radius: 10px;              
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.signup-container .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-container .form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.signup-container input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.signup-container button {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+  border-radius: 4px;
+}
+
+.signup-container button:hover {
+  background: #45a049;
+}
+
+.signup-container a {
+  color: #4CAF50;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.signup-container a:hover {
+  color: #388E3C;
+}
+
+.signup-container .error-message {
+  color: red;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .sign-container .signup-box {
+    flex-direction: column;       
+  }
+
+  .signup-container .right-section img {
+    max-width: 100%;
+    max-height: 250px;             
+  }
+}
+
+.signup-container h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 0px;
+}
+
+.signup-container .gap {
+  margin-top: 20px;
+}
+
+.signup-container .choose {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+.signup-container .choose::before,
+.signup-container .choose::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ccc;  
+  margin: 0 10px;
+}
+
+.signup-container .google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff; 
+  color: #f80505;
+  border: 1px solid #f80505;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container .google-btn img {
+  width: 30px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.signup-container .google-btn:hover {
+  background-color: #f1f1f1;
+  border-color: #bbb;
+}
+
+.signup-container .forgot-password {
+  margin-left: 260px;
+  text-decoration: underline;
+}
+
+.signup-container .signup-btn2 {
+  font-weight: bold;
+  color: #4CAF50;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.signup-container .already {
+  gap: 5px;                    
+  font-size: 14px;
+  margin-bottom: 20px; 
+  font-weight: bold;
+}
+
+.signup-container .signup-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;             
+  margin: 20px 0;
+}
+
+.signup-container .already .signup-btn {
+  display: inline;          
+  margin: 0;                
+  text-decoration: underline;
+  font-weight: bold;
+}
+.email{
+  margin-top: 10px;
+}
+.pass{
+  margin-top: 10px;
+}
+.cpass{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
